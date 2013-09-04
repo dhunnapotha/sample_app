@@ -1,0 +1,11 @@
+<p>
+
+<%= "#{@user.name} #{@user.email}"%>
+<%= form_tag("/search",method: "get") do %>
+	<%= label_tag(:q, "search for:") %>
+	<%= text_field_tag(:q) %>
+	<%= submit_tag("search") %>
+	<% end %>
+
+
+</p>
