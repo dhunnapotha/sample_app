@@ -1,0 +1,9 @@
+<li class="li_users" id="li_user_<%= user.id %>">
+  <%= link_to user.name, user %>
+  <%= link_to "Edit", edit_user_path(:id=>user.id) %>
+  <%= link_to "Del", user, method: :delete, 
+  							remote: true,
+  							class: "l_del",
+  							data: {confirm: "You sure?"} %>
+
+</li>
